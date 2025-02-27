@@ -8,4 +8,4 @@ st.write("Marisa von Fellenberg: vonfemar@students.zhaw.ch")
 st.write("Rebeka Ammann: ammanre1@students.zhaw.ch")
 st.write("Durch diese App wird es ihnen möglich ihre Daten zu organisieren und abzurufen.")
 if st.button("Welt retten", icon="🌍") :
-    st.write("Booooom! 🌎💥🔥")
+    st.write("Booooom! 🌎💥🔥")  
