@@ -19,3 +19,13 @@ if st.button("BMI berechnen"):
     else:
         st.write("Bitte geben Sie gültige Werte für Größe und Gewicht ein.")
 
+st.image(
+        "https://www.zurrose.ch/sites/default/files/styles/media_w1166/public/media/images/ZRS_ADIPOSITAS_1%20%282%29.png.webp?h=e53d47f6&itok=XTap7IX1",
+        caption=None,
+        width=None,
+        use_column_width=None,
+        clamp=False,
+        channels="RGB",
+        output_format="auto",
+        use_container_width=False
+    )
