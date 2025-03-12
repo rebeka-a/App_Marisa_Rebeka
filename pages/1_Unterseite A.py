@@ -34,3 +34,6 @@ st.image(
     "https://www.zurrose.ch/sites/default/files/styles/media_w1166/public/media/images/ZRS_ADIPOSITAS_1%20%282%29.png.webp?h=e53d47f6&itok=XTap7IX1",
     use_container_width=True
 )
+
+# update data in session state and save to persistent storage
+DataManager().append_record(session_state_key='data_df', record_dict=result)
