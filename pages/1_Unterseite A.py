@@ -1,4 +1,5 @@
 import streamlit as st
+from utils.data_manager import DataManager
 
 # Page Configuration
 st.set_page_config(page_title="BMI Rechner", page_icon="📄", layout="wide")
@@ -26,6 +27,16 @@ if st.button("BMI berechnen"):
         else:
             st.error("❌ Sie sind **adipös**. Bitte sprechen Sie mit einem Arzt.")
 
+        result = {
+            "height": height,
+            "weight": weight,
+            "bmi": bmi,
+        }
+
+    
+        data_df = st.session_state['data_df']
+        DataManager().append_record(session_state_key='data_df', record_dict=result)
+
     else:
         st.error("Bitte geben Sie gültige Werte für Größe und Gewicht ein.")
 
@@ -34,6 +45,3 @@ st.image(
     "https://www.zurrose.ch/sites/default/files/styles/media_w1166/public/media/images/ZRS_ADIPOSITAS_1%20%282%29.png.webp?h=e53d47f6&itok=XTap7IX1",
     use_container_width=True
 )
-
-# update data in session state and save to persistent storage
-DataManager().append_record(session_state_key='data_df', record_dict=result)
