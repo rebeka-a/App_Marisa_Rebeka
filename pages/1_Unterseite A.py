@@ -1,5 +1,6 @@
 import streamlit as st
 from utils.data_manager import DataManager
+from datetime import datetime
 
 # Page Configuration
 st.set_page_config(page_title="BMI Rechner", page_icon="📄", layout="wide")
@@ -27,14 +28,18 @@ if st.button("BMI berechnen"):
         else:
             st.error("❌ Sie sind **adipös**. Bitte sprechen Sie mit einem Arzt.")
 
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+        # Create result dictionary with timestamp
         result = {
+            "timestamp": timestamp,
             "height": height,
             "weight": weight,
             "bmi": bmi,
         }
 
     
-        data_df = st.session_state['data_df']
+        
         DataManager().append_record(session_state_key='data_df', record_dict=result)
 
     else:
