@@ -1,8 +1,6 @@
 import streamlit as st
-from utils.data_manager import DataManager
 from datetime import datetime
-
-from App_Marisa_Rebeka.utils.data_manager import DataManager
+from utils.data_manager import DataManager
 
 # Page Configuration
 st.set_page_config(page_title="BMI Rechner", page_icon="📄", layout="wide")
