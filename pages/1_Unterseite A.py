@@ -2,6 +2,8 @@ import streamlit as st
 from utils.data_manager import DataManager
 from datetime import datetime
 
+from App_Marisa_Rebeka.utils.data_manager import DataManager
+
 # Page Configuration
 st.set_page_config(page_title="BMI Rechner", page_icon="📄", layout="wide")
 
@@ -50,3 +52,16 @@ st.image(
     "https://www.zurrose.ch/sites/default/files/styles/media_w1166/public/media/images/ZRS_ADIPOSITAS_1%20%282%29.png.webp?h=e53d47f6&itok=XTap7IX1",
     use_container_width=True
 )
+<<<<<<< HEAD
+=======
+
+# Define the result dictionary with relevant data
+result = {
+    "height": height,
+    "weight": weight,
+    "bmi": bmi if 'bmi' in locals() else None
+}
+
+# update data in session state and save to persistent storage
+DataManager().append_record(session_state_key='data_df', record_dict=result)
+>>>>>>> fbf9c0d (Änderungen)

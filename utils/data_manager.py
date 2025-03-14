@@ -244,3 +244,4 @@ class DataManager:
         
         st.session_state[session_state_key] = data_value
         self.save_data(session_state_key)
+
