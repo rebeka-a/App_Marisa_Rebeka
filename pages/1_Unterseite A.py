@@ -2,13 +2,11 @@ import streamlit as st
 from datetime import datetime
 from utils.data_manager import DataManager
 
-# Session-State-Variable "data_df" initialisieren, falls sie nicht existiert
-if "data_df" not in st.session_state:
-    st.session_state["data_df"] = []  # Leere Liste für Datensätze
-
-# Stelle sicher, dass DataManager die Daten registriert
+# Initialisiere DataManager
 data_manager = DataManager()
-data_manager.load_app_data(session_state_key="data_df", file_name="data.csv", initial_value=[])
+
+if "data_df" not in st.session_state:
+    data_manager.load_app_data(session_state_key="data_df", file_name="data.csv", initial_value=[])
 
 st.set_page_config(page_title="BMI Rechner", page_icon="📄", layout="wide")
 
