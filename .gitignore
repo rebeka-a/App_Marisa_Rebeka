@@ -1,6 +1,7 @@
 # Added WEHS
 local/
 .streamlit/secrets.toml
+secrets.toml
 app_data/
 .DS_Store
 
