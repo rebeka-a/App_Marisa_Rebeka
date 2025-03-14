@@ -40,20 +40,13 @@ if st.button("BMI berechnen"):
             "bmi": bmi,
         }
 
-    
-        
-        DataManager().append_record(session_state_key='data_df', record_dict=result)
-
     else:
         st.error("Bitte geben Sie gültige Werte für Größe und Gewicht ein.")
 
 # BMI Image
 st.image(
     "https://www.zurrose.ch/sites/default/files/styles/media_w1166/public/media/images/ZRS_ADIPOSITAS_1%20%282%29.png.webp?h=e53d47f6&itok=XTap7IX1",
-    use_container_width=True
-)
-<<<<<<< HEAD
-=======
+    use_container_width=True)
 
 # Define the result dictionary with relevant data
 result = {
@@ -61,7 +54,5 @@ result = {
     "weight": weight,
     "bmi": bmi if 'bmi' in locals() else None
 }
-
 # update data in session state and save to persistent storage
 DataManager().append_record(session_state_key='data_df', record_dict=result)
->>>>>>> fbf9c0d (Änderungen)
