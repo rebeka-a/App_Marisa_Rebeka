@@ -2,6 +2,11 @@ import streamlit as st
 from datetime import datetime
 from utils.data_manager import DataManager
 
+# ====== Start Login Block ======
+from utils.login_manager import LoginManager
+LoginManager().go_to_login('Start.py') 
+# ====== End Login Block ======
+
 # Initialisiere DataManager
 data_manager = DataManager()
 
