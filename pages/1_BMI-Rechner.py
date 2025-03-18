@@ -2,6 +2,8 @@ import streamlit as st
 from datetime import datetime
 from utils.data_manager import DataManager
 
+st.set_page_config(page_title="BMI Rechner", page_icon="📄", layout="wide")  # Nur einmal aufrufen!
+
 # ====== Start Login Block ======
 from utils.login_manager import LoginManager
 LoginManager().go_to_login('Start.py') 
@@ -13,7 +15,8 @@ data_manager = DataManager()
 if "data_df" not in st.session_state:
     data_manager.load_app_data(session_state_key="data_df", file_name="data.csv", initial_value=[])
 
-st.set_page_config(page_title="BMI Rechner", page_icon="📄", layout="wide")
+# Entferne diesen doppelten Aufruf!
+# st.set_page_config(page_title="BMI Rechner", page_icon="📄", layout="wide")
 
 st.title("BMI Rechner 🏋️‍♂️")
 
