@@ -20,6 +20,8 @@ data_manager.load_user_data(
 st.title("Unsere erste Streamlit App -- ein BMI-Rechner!")
 st.write("Diese App wurde von Marisa und Rebeka im Rahmen des BMLD-Studiums entwickelt.")
 st.write("Durch diese App kannst du ganz leicht deinen BMI berechnen.")
+st.write("Der BMI ist eine bestimmte Grösse, welche das Verhältniss zwischen Gewicht und Körpergrösse angibt. Durch den BMI kann man heruas finden, ob man einen gesundes Gewicht hat oder nicht.")
+st.write("Viel Spass beim Ausprobieren!")
 
 
 st.title("Unsere Kontaktdaten:")
