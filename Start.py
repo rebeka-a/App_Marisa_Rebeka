@@ -21,6 +21,7 @@ st.title("Unsere erste Streamlit App -- ein BMI-Rechner!")
 st.write("Diese App wurde von Marisa und Rebeka im Rahmen des BMLD-Studiums entwickelt.")
 st.write("Durch diese App kannst du ganz leicht deinen BMI berechnen.")
 
+
 st.title("Unsere Kontaktdaten:")
 st.write("Marisa von Fellenberg: vonfemar@students.zhaw.ch")
 st.write("Rebeka Ammann: ammanre1@students.zhaw.ch")

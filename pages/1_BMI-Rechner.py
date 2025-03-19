@@ -19,6 +19,7 @@ if "data_df" not in st.session_state:
 # st.set_page_config(page_title="BMI Rechner", page_icon="📄", layout="wide")
 
 st.title("BMI Rechner 🏋️‍♂️")
+st.write("Willst auch du deinen BMI wissen? Trag deine Daten ein, klikke auf den Button und finde es heraus!")
 
 height = st.number_input("Geben Sie Ihre Grösse in cm ein:", min_value=0.0, format="%.2f")
 weight = st.number_input("Geben Sie Ihr Gewicht in kg ein:", min_value=0.0, format="%.2f")

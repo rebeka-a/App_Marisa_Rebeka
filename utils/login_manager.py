@@ -144,3 +144,4 @@ class LoginManager:
             st.switch_page(login_page_py_file)
         else:
             self.authenticator.logout() # create logout button
+    
