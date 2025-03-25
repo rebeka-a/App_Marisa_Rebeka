@@ -27,7 +27,3 @@ st.write("Viel Spass beim Ausprobieren!")
 st.title("Unsere Kontaktdaten:")
 st.write("Marisa von Fellenberg: vonfemar@students.zhaw.ch")
 st.write("Rebeka Ammann: ammanre1@students.zhaw.ch")
-
-
-st.write("Secrets:", st.secrets)
-st.write("WebDAV-Username:", st.secrets["webdav"]["username"])
